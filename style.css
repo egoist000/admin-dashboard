@@ -16,3 +16,120 @@ body {
     font-family: 'Mukta', sans-serif;
     background-color: var(--color-5);
 }
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-3);
+    color: var(--color-5);
+    padding: 1rem 2rem;
+    gap: 3rem;
+}
+
+.sidebar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.menu-item a:hover {
+    color: var(--color-2);
+}
+
+/* MAIN */
+
+main {
+    background-color: var(--color-4);
+    color: var(--color-3);
+}
+
+/* HEADER */
+
+main header {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 1rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background-color: var(--color-5);
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+/* HEADER USER */
+
+header .search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: 1.3rem;
+}
+
+.search input {
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    width: 100%;
+    outline: none;
+    background-color: var(--color-4);
+}
+
+header .user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header .avatar {
+    display: flex;
+    align-items: center;
+}
+
+.avatar img {
+    border-radius: 50%;
+}
+
+.avatar > img.small-ava {
+    width: 50px;
+    height: 50px;
+}
+
+.avatar > img.large-ava {
+    width: 100px;
+    height: 100px;
+}
