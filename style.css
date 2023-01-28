@@ -120,8 +120,12 @@ header .avatar {
     align-items: center;
 }
 
-.user p {
+.user-name {
     font-weight: 700;
+}
+
+.user-role {
+    color: var(--color-1);
 }
 
 .avatar img {
@@ -226,8 +230,8 @@ section {
 /* RIGHT-SECTION*/
 
 .right-section {
-    display: grid;
-    grid-row: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
 }
 
